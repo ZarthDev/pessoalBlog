@@ -99,7 +99,10 @@ try {
                         <h6 class="card-title fw-bold">
                             <?= htmlspecialchars($artigo['nameText']) ?>
                         </h6>
-                        <a href="#" class="btn btn-primary btn-sm mt-auto">Ler mais</a>
+                        <form action="redirecionamento.php" method="post">
+                            <input type="hidden" name="artigoId" value="<?= htmlspecialchars($artigo['textId']) ?>">
+                            <button type="submit" class="btn btn-primary btn-sm mt-auto">Ler mais</button>
+                        </form>
                     </div>
                 </div>
             </div>
