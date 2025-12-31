@@ -258,10 +258,12 @@
 
                 <!-- Frase / Arcano -->
                 <div class="col-md-4">
-                    <h5 class="footer-title">Arcano</h5>
+                    <h5 class="footer-title">Franz Kafka</h5>
                     <blockquote class="footer-quote">
-                        “Toda narrativa é um espelho.  
-                        Algumas refletem, outras devoram.”
+                        “Só podia encontrar a felicidade 
+                        se conseguisse subverter o mundo 
+                        para o fazer entrar no verdadeiro, 
+                        no puro, no imutável.”
                     </blockquote>
                 </div>
 
