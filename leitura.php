@@ -73,6 +73,103 @@
             color: #ccc;
             margin-top: 80px;
         }
+
+                .footer-arcane {
+            background: radial-gradient(circle at top, #1b1f2a, #0e1117);
+            color: #cfd3ec;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .footer-arcane::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: 
+                radial-gradient(#ffffff10 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+        
+        .footer-title {
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            color: #f1f1f1;
+        }
+        
+        .footer-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #bfc5ff;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-links a {
+            color: #bfc5ff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #ffd369;
+            padding-left: 5px;
+        }
+        
+        .footer-quote {
+            font-style: italic;
+            font-size: 0.95rem;
+            color: #ffd369;
+            border-left: 3px solid #ffd369;
+            padding-left: 12px;
+        }
+        
+        .footer-divider {
+            border-color: #ffffff20;
+            margin: 30px 0;
+        }
+        
+        .footer-copy {
+            font-size: 0.85rem;
+            color: #9aa0ff;
+        }
+        
+        .footer-social a {
+            margin-left: 15px;
+            font-size: 0.9rem;
+            text-decoration: none;
+            color: #bfc5ff;
+            position: relative;
+        }
+        
+        .footer-social a::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #ffd369;
+            transition: width 0.3s ease;
+        }
+        
+        .footer-social a:hover {
+            color: #ffd369;
+        }
+        
+        .footer-social a:hover::after {
+            width: 100%;
+        }
+
     </style>
 </head>
 
@@ -146,10 +243,44 @@
     </main>
 
     <!-- Footer -->
-    <footer class="text-center py-4">
-        <p class="mb-1">© <?= date('Y') ?> • Blog do Arthur</p>
-        <small>Cinema, HQs, Filosofia e Literatura</small>
-    </footer>
+    <footer class="footer-arcane mt-5">
+        <div class="container py-5">
+            <div class="row g-4">
 
+                <!-- Sobre -->
+                <div class="col-md-4">
+                    <h5 class="footer-title">Blog do Arthur</h5>
+                    <p class="footer-text">
+                        Um espaço dedicado ao cinema, HQs, filosofia e narrativas
+                        que atravessam o imaginário humano — do real ao simbólico.
+                    </p>
+                </div>
+
+                <!-- Frase / Arcano -->
+                <div class="col-md-4">
+                    <h5 class="footer-title">Arcano</h5>
+                    <blockquote class="footer-quote">
+                        “Toda narrativa é um espelho.  
+                        Algumas refletem, outras devoram.”
+                    </blockquote>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+
+            <!-- Bottom -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <span class="footer-copy">
+                    © <?= date('Y') ?> Blog do Arthur — Todos os direitos reservados
+                </span>
+
+                <div class="footer-social">
+                    <a href="#" title="Instagram">Instagram</a>
+                    <a href="#" title="GitHub">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
