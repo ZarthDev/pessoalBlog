@@ -1,9 +1,6 @@
 <?php
 session_start();
 
-/* =======================
-   CONEXÃO COM O BANCO
-======================= */
 $host = 'localhost';
 $db   = 'blog_arthur';
 $user = 'root';
@@ -61,6 +58,8 @@ try {
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
@@ -217,6 +216,20 @@ try {
                     </svg> 
                 </button> 
             </form> 
+            <li>
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <p>Try scrolling the rest of the page to see this option in action.</p>
+                  </div>
+                </div>
+                
+            </li>
         </ul> 
     </div> 
 </div> 
