@@ -260,8 +260,8 @@
             </span>
 
             <div class="footer-social">
-                <a href="#" title="Instagram">Instagram</a>
-                <a href="#" title="GitHub">GitHub</a>
+                <a href="https://www.instagram.com/arthdev_" title="Instagram">Instagram</a>
+                <a href="https://github.com/ZarthDev" title="GitHub">GitHub</a>
             </div>
         </div>
     </div>
